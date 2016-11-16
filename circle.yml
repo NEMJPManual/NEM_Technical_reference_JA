@@ -1,0 +1,26 @@
+general:
+  branches:
+    ignore:
+      - gh-pages
+
+machine:
+  timezone:
+    Asia/Tokyo
+
+dependencies:
+  post:
+    - sudo apt-get update
+    - sudo apt-get install node npm
+
+test:
+  override:
+    - make clean
+    - make
+  post:
+    mv _build $CIRCLE_ARTIFACTS
+
+deployment:
+ gh-pages: # label to explain what kind of deployment
+   branch: master
+   commands:
+     - ./deploy.sh
