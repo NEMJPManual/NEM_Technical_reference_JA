@@ -10,6 +10,7 @@ machine:
 dependencies:
   post:
     - sudo apt-get install node npm
+    - npm install -g gitbook-cli
 
 test:
   override:
