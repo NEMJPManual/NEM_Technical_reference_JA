@@ -17,7 +17,7 @@ test:
     - make clean
     - make
   post:
-    - mv _book $CIRCLE_ARTIFACTS
+      - cp -r _book $CIRCLE_ARTIFACTS/
 
 deployment:
  gh-pages: # label to explain what kind of deployment
