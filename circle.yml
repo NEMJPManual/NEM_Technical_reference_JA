@@ -9,7 +9,6 @@ machine:
 
 dependencies:
   post:
-    - sudo apt-get update
     - sudo apt-get install node npm
 
 test:
@@ -17,7 +16,7 @@ test:
     - make clean
     - make
   post:
-    mv _build $CIRCLE_ARTIFACTS
+    - mv _book $CIRCLE_ARTIFACTS
 
 deployment:
  gh-pages: # label to explain what kind of deployment
