@@ -14,8 +14,10 @@ gitbookを使っています。
 ```
 
 npm install -g gitbook-cli
+gitbook install # katexをインストール
 make
 make serve # ローカルブラウザ上で確認
 
 ```
 
+数式のレンダリングに[Katex](https://khan.github.io/KaTeX/)を使っていますので、あらかじめインストールする必要があります。
