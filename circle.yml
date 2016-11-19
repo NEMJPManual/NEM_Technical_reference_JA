@@ -11,6 +11,7 @@ dependencies:
   post:
     - sudo apt-get install node npm
     - npm install -g gitbook-cli
+    - gitbook install
 
 test:
   override:
