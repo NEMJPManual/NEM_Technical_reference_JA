@@ -44,3 +44,4 @@
  * [9.2 ノードの起動](Network/9.2.md)
  * [9.3 ノードの発見](Network/9.3.md)
  * [9.4 ノードの選抜](Network/9.4.md)
+* [10. 引用論文](References.md)
