@@ -1,2 +1,4 @@
 node_modules
 _book
+.python-version
+npm-debug.log

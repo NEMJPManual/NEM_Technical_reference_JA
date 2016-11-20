@@ -7,5 +7,5 @@ clean:
 	rm -rf _book
 
 serve:
-	gitbook serve
+	gitbook serve --watch
 
