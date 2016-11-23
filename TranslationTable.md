@@ -9,3 +9,8 @@
 | vest                | ヴェスト |
 | block height, height | ブロック高 |
 | Transfer Transaction | 送金トランザクション |
+| core | コア |
+| direct structure reachability | 構造的直接到達性 |
+| pivot | 軸 |
+| inter-level proximity matrix | レベル間近似度行列 |
+| outlier | 外れ値 |
