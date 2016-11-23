@@ -15,7 +15,7 @@
  * [4.2 重要度移譲トランザクション](Transactions/4.2.md)
  * [4.3 マルチシグトランザクション](Transactions/4.3.md)
 * [5. ブロックとブロックチェーン](Blockchain/5_Blockchain.md)
- * [5.1 採掘難度](Blockchain/5.1.md)
+ * [5.1 ブロック作成難度](Blockchain/5.1.md)
  * [5.2 ブロックスコア](Blockchain/5.2.md)
  * [5.3 ブロックの作成](Blockchain/5.3.md)
  * [5.4 ブロックチェーンの同期](Blockchain/5.4.md)
