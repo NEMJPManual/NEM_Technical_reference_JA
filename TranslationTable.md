@@ -14,5 +14,8 @@
 | pivot                         | 軸                                   |
 | inter-level proximity matrix  | レベル間近似度行列                   |
 | outlier                       | 外れ値                               |
-| balance                       | バランスシート                       |
+| balance                       | バランスシート、残高                 |
 | pseudonymous                  | 疑似匿名性                           |
+| Sybil attack | Sybil attack |
+| Nothing-at-Stake | Nothing-at-stake |
+| actor | 主体 |
