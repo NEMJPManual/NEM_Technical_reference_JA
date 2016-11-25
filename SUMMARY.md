@@ -26,7 +26,7 @@
  * [6.4 アルゴリズムの拡張](Reputation/6.4.md)
  * [6.5 評判管理による恩恵](Reputation/6.5.md)
 * [7. Proof of Importance(重要度の証明)](PoI/7_PoI.md)
- * [7.1 重要度計算に参加する条件](PoI/7.1.md)
+ * [7.1 重要度計算への参加資格](PoI/7.1.md)
  * [7.2 アウトリンク行列](PoI/7.2.md)
  * [7.3 NCDawareRank](PoI/7.3.md)
  * [7.4 トランザクショングラフのクラスタリング](PoI/7.4.md)
