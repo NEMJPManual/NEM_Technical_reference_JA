@@ -31,7 +31,7 @@
  * [7.3 NCDawareRank](PoI/7.3.md)
  * [7.4 トランザクショングラフのクラスタリング](PoI/7.4.md)
  * [7.5 重要度スコアの計算](PoI/7.5.md)
- * [7.6 改ざんに対する頑健性](PoI/7.6.md)
+ * [7.6 攻撃への耐性](PoI/7.6.md)
  * [7.7 Nothing-at-Stake問題](PoI/7.7.md)
  * [7.8 Proof of Stakeとの比較](PoI/7.8.md)
 * [8. 時間の同期](Timesync/8_Timesync.md)
