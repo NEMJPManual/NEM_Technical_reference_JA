@@ -30,3 +30,8 @@
 | Twisted Edwards curve         | 歪曲エドワーズ曲線                   |
 | malliability                  | 展性                                 |
 | payload                       | ペイロード                           |
+| Sybil attack                  | Sybil attack                         |
+| Nothing-at-Stake              | Nothing-at-stake                     |
+| actor                         | 主体                                 |
+| unconfirmed transaction       | 未処理トランザクション               |
+| salt                          | ソルト                               |
