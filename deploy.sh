@@ -10,7 +10,7 @@ abort () {
 
 REVISION=$(git rev-parse --short HEAD)
 
-
+GH_TOKEN=$GH_TOKEN_FOR_NEM_TECHREF
 # if you want to use custom domain.
 # echo > CNAME
 
@@ -32,6 +32,6 @@ if [ $ret -eq 0 ]; then
 else
     git commit -m "ci: publish pages at ${REVISION}"
     echo "pushing to gh-pages."
-    git remote add origin "https://joemphilips:${GH_TOKEN}@github.com/joemphilips/NEM_Technical_reference_JA"
+    git remote add origin "https://joemphilips:${GH_TOKEN}@github.com/NEMJPManual/NEM_Technical_reference_JA"
     git push -f origin master:gh-pages
 fi
