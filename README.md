@@ -2,7 +2,7 @@
 
 [NEM Technical Reference](https://www.nem.io/NEM_techRef.pdf) の和訳
 
-翻訳後文書は[こちら](http://joemphilips.github.io/NEM_Technical_reference_JA)
+翻訳後文書は[こちら](http://nemmanual.net/NEM_Technical_reference_JA/)
 
 翻訳の指針などは`CONTRIBUTING.md`を参照
 
