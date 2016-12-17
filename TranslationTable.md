@@ -35,3 +35,4 @@
 | actor                         | 主体                                 |
 | unconfirmed transaction       | 未処理トランザクション               |
 | salt                          | ソルト                               |
+| IV, Initialization Vector     | 初期化ベクトル                       |
