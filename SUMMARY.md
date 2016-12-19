@@ -6,7 +6,7 @@
  * [2.2 NEMにおけるアドレス](Accounts/2.2.md)
  * [2.3 公開鍵のアドレスへの変換](Accounts/2.3.md)
  * [2.4 意図的なアドレスの衝突](Accounts/2.4.md)
-* [3. 暗号](Cryptography/3_Cryptography.md)
+* [3. 暗号法](Cryptography/3_Cryptography.md)
  * [3.1 公開鍵と秘密鍵](Cryptography/3.1.md)
  * [3.2 署名と検証](Cryptography/3.2.md)
  * [3.3 エンコードとデコード](Cryptography/3.3.md)
