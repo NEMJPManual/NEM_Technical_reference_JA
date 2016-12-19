@@ -13,7 +13,7 @@
 * [4. トランザクション](Transactions/4_Transactions.md)
  * [4.1 送金トランザクション](Transactions/4.1.md)
  * [4.2 重要度移譲トランザクション](Transactions/4.2.md)
- * [4.3 マルチシグトランザクション](Transactions/4.3.md)
+ * [4.3 マルチシグ関連トランザクション](Transactions/4.3.md)
 * [5. ブロックとブロックチェーン](Blockchain/5_Blockchain.md)
  * [5.1 ブロック作成難度](Blockchain/5.1.md)
  * [5.2 ブロックスコア](Blockchain/5.2.md)
