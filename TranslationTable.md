@@ -26,3 +26,7 @@
 | multisig                      | マルチシグ                           |
 | nemesis block                 | ネメシスブロック                     |
 | Triplet                       | トリプレット                         |
+| crypto currency               | 暗号通貨                             |
+| Twisted Edwards curve         | 歪曲エドワーズ曲線                   |
+| malliability                  | 展性                                 |
+| payload                       | ペイロード                           |
