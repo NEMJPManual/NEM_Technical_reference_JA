@@ -1,6 +1,5 @@
 # 対訳表
 
-<<<<<<< HEAD
 | 英文                               | 和訳                                 |
 | :--                                | :--                                  |
 | ledger                             | 台帳                                 |
@@ -39,3 +38,6 @@
 | Aggregate modification transaction | マルチシグ変更トランザクション       |
 | cosignatory                        | 連署人                               |
 | Multisig signature transaction     | マルチシグ署名トランザクション       |
+| unconfirmed Transaction            | 未承認トランザクション               |
+| fair share                         | 公正割当分                           |
+| blockchain syncronization round    | ブロックチェーン同期ラウンド         |
