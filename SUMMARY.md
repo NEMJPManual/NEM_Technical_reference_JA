@@ -9,7 +9,7 @@
 * [3. 暗号法](Cryptography/3_Cryptography.md)
  * [3.1 公開鍵と秘密鍵](Cryptography/3.1.md)
  * [3.2 署名と検証](Cryptography/3.2.md)
- * [3.3 エンコードとデコード](Cryptography/3.3.md)
+ * [3.3 メッセージの暗号化と復号化](Cryptography/3.3.md)
 * [4. トランザクション](Transactions/4_Transactions.md)
  * [4.1 送金トランザクション](Transactions/4.1.md)
  * [4.2 重要度移譲トランザクション](Transactions/4.2.md)
