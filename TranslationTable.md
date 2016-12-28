@@ -32,7 +32,6 @@
 | Twisted Edwards curve              | 歪曲エドワーズ曲線                   |
 | malliability                       | 展性                                 |
 | payload                            | ペイロード                           |
-| unconfirmed transaction            | 未処理トランザクション               |
 | salt                               | ソルト                               |
 | IV, Initialization Vector          | 初期化ベクトル                       |
 | Aggregate modification transaction | マルチシグ変更トランザクション       |
