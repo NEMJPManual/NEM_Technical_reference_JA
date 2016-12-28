@@ -5,3 +5,6 @@
 
 誤字・誤訳などはgithubでご報告いただけると助かります。
 
+監修 [joemphilips](http://joemphilips.com)
+
+NEM Address: NBZ5WW-S53QRZ-DO73Z7-B6CA6I-R2PNS4-PLR24N-NKZJ
