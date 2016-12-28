@@ -1,7 +1,12 @@
 # 暗号法
 
-> 公開鍵暗号方式の重要性についてはおおむね理解してはいたが、ここまで早く普及したことは私の想定外だった。
-> 発達したコミュニケーションテクノロジーの根幹になることを想定したものではなかったのだ。
+> I understood the importance in principle of public key cryptography but it’s
+> all moved much faster than I expected. I did not expect it to be a mainstay
+> of advanced communications technology
+>
+> 公開鍵暗号方式の重要性についてはおおむね理解してはいましたが、ここまで早く普及したことは私の想定外でした。
+> 発達したコミュニケーションテクノロジーの根幹になることを想定したものではなかったのです。
+>
 > Whitfield Diffie (Diffie-Hellman鍵共有の考案者)
 
 ブロックチェーンテクノロジーはいくつかの暗号学的なコンセプトの利用を前提としています。

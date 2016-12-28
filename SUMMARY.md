@@ -12,7 +12,7 @@
  * [3.3 メッセージの暗号化と復号化](Cryptography/3.3.md)
 * [4. トランザクション](Transactions/4_Transactions.md)
  * [4.1 送金トランザクション](Transactions/4.1.md)
- * [4.2 重要度移譲トランザクション](Transactions/4.2.md)
+ * [4.2 重要度委託トランザクション](Transactions/4.2.md)
  * [4.3 マルチシグ関連トランザクション](Transactions/4.3.md)
  * [4.4 未承認トランザクション（スパムフィルタ）](Transactions/4.4.md)
 * [5. ブロックとブロックチェーン](Blockchain/5_Blockchain.md)

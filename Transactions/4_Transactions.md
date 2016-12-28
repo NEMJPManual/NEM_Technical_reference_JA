@@ -1,6 +1,10 @@
 ## トランザクション
 
-> ディーンはTシャツをスカーフのように首に引っ掛けただけの恰好でガソリン・ポンプを仕切る女とビジネスを交わし(Transact)、いつものようにぶっきらぼうにかたづけると、車に戻ってまた爆音を鳴らして発信した。
+> To transact business with the girl who ran the gas-pump Dean merely threw
+> on his T-shirt like a scarf and was curt and abrupt as usual and got back in
+> the car and off we roared again.
+>
+> ディーンはTシャツをスカーフのように首に引っ掛けただけの恰好でガソリン・ポンプを仕切る女とビジネスを交わし(Transact)、いつものようにぶっきらぼうにかたづけると、車に戻ってまた爆音を鳴らして発進した。
 >
 > Jack Kerovac, On the road
 
