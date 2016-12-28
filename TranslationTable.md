@@ -16,6 +16,13 @@
 | outlier                       | 外れ値                               |
 | balance                       | バランスシート、残高                 |
 | pseudonymous                  | 疑似匿名性                           |
-| Sybil attack | Sybil attack |
-| Nothing-at-Stake | Nothing-at-stake |
-| actor | 主体 |
+| Sybil attack                  | Sybil attack                         |
+| Nothing-at-Stake              | Nothing-at-stake                     |
+| actor                         | 主体                                 |
+| confidentiality               | 機密性                               |
+| non-repudiability             | 否認不可性                           |
+| height, blockheight           | ブロック高                           |
+| cosignatories                 | 共同署名者                           |
+| multisig                      | マルチシグ                           |
+| nemesis block                 | ネメシスブロック                     |
+| Triplet                       | トリプレット                         |
