@@ -40,3 +40,5 @@
 | unconfirmed Transaction            | 未承認トランザクション               |
 | fair share                         | 公正割当分                           |
 | blockchain syncronization round    | ブロックチェーン同期ラウンド         |
+| network time                       | ネットワーク時間                     |
+| trust value  | トラスト・バリュー |
