@@ -41,4 +41,8 @@
 | fair share                         | 公正割当分                           |
 | blockchain syncronization round    | ブロックチェーン同期ラウンド         |
 | network time                       | ネットワーク時間                     |
-| trust value  | トラスト・バリュー |
+| local trust value  | ローカル信頼値 |
+| local trust vector | ローカル信頼ベクトル |
+| node interaction | ノード間の交信 |
+| neutral | ニュートラル |
+| credibility | 信憑性 |
