@@ -8,7 +8,7 @@
 | delegated harvesting               | 委託収穫                             |
 | NEM block chain platform           | NEM ブロックチェーンプラットフォーム |
 | Proof of Importance                | 重要度の証明                         |
-| vest                               | ヴェスト                             |
+| vested balance                     | 権利確定残高                         |
 | block height, height               | ブロック高                           |
 | Transfer Transaction               | 送金トランザクション                 |
 | core                               | コア                                 |
