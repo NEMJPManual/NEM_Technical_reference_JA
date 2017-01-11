@@ -5,7 +5,7 @@
 | ledger                             | 台帳                                 |
 | harvesting                         | 収穫                                 |
 | harvesting power                   | 収穫力                               |
-| delegated harvesting               | 委託収穫                             |
+| delegated harvesting               | 委任収穫                             |
 | NEM block chain platform           | NEM ブロックチェーンプラットフォーム |
 | Proof of Importance                | 重要度の証明                         |
 | vested balance                     | 権利確定残高                         |
