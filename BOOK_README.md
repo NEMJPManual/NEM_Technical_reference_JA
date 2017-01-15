@@ -1,7 +1,7 @@
 # NEM Technical Referenceの和訳
 
 * [オリジナル文書](https://www.nem.io/NEM_techRef.pdf)
-* [github上のソース](https://github.com/joemphilips/NEM_Technical_reference_JA)です。
+* [github上のソース](https://github.com/NEMJPManual/NEM_Technical_reference_JA)です。
 
 誤字・誤訳などはgithubでご報告いただけると助かります。
 
