@@ -1,0 +1,901 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3. 暗号法 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="3.1.html" />
+    
+    
+    <link rel="prev" href="../Accounts/2.4.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Introduction/1_Introduction.html">
+            
+                <a href="../Introduction/1_Introduction.html">
+            
+                    
+                    1. イントロダクション
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Accounts/2_Accounts.html">
+            
+                <a href="../Accounts/2_Accounts.html">
+            
+                    
+                    2. アカウントとアドレス
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Accounts/2.1.html">
+            
+                <a href="../Accounts/2.1.html">
+            
+                    
+                    2.1 アカウントの状態
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Accounts/2.2.html">
+            
+                <a href="../Accounts/2.2.html">
+            
+                    
+                    2.2 NEMにおけるアドレス
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Accounts/2.3.html">
+            
+                <a href="../Accounts/2.3.html">
+            
+                    
+                    2.3 公開鍵のアドレスへの変換
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../Accounts/2.4.html">
+            
+                <a href="../Accounts/2.4.html">
+            
+                    
+                    2.4 アドレスの意図的な重複の可能性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="3_Cryptography.html">
+            
+                <a href="3_Cryptography.html">
+            
+                    
+                    3. 暗号法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="3.1.html">
+            
+                <a href="3.1.html">
+            
+                    
+                    3.1 公開鍵と秘密鍵
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="3.2.html">
+            
+                <a href="3.2.html">
+            
+                    
+                    3.2 署名と検証
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="3.3.html">
+            
+                <a href="3.3.html">
+            
+                    
+                    3.3 メッセージの暗号化と復号化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Transactions/4_Transactions.html">
+            
+                <a href="../Transactions/4_Transactions.html">
+            
+                    
+                    4. トランザクション
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Transactions/4.1.html">
+            
+                <a href="../Transactions/4.1.html">
+            
+                    
+                    4.1 送金トランザクション
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../Transactions/4.2.html">
+            
+                <a href="../Transactions/4.2.html">
+            
+                    
+                    4.2 重要度委任トランザクション
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../Transactions/4.3.html">
+            
+                <a href="../Transactions/4.3.html">
+            
+                    
+                    4.3 マルチシグ関連トランザクション
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../Transactions/4.4.html">
+            
+                <a href="../Transactions/4.4.html">
+            
+                    
+                    4.4 未承認トランザクション（スパムフィルタ）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Blockchain/5_Blockchain.html">
+            
+                <a href="../Blockchain/5_Blockchain.html">
+            
+                    
+                    5. ブロックとブロックチェーン
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Blockchain/5.1.html">
+            
+                <a href="../Blockchain/5.1.html">
+            
+                    
+                    5.1 ブロック作成難度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Blockchain/5.2.html">
+            
+                <a href="../Blockchain/5.2.html">
+            
+                    
+                    5.2 ブロックスコア
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Blockchain/5.3.html">
+            
+                <a href="../Blockchain/5.3.html">
+            
+                    
+                    5.3 ブロックの作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../Blockchain/5.4.html">
+            
+                <a href="../Blockchain/5.4.html">
+            
+                    
+                    5.4 ブロックチェーンの同期
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Reputation/6_Reputation.html">
+            
+                <a href="../Reputation/6_Reputation.html">
+            
+                    
+                    6. ノードの評判管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Reputation/6.1.html">
+            
+                <a href="../Reputation/6.1.html">
+            
+                    
+                    6.1 ノード間の交信
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../Reputation/6.2.html">
+            
+                <a href="../Reputation/6.2.html">
+            
+                    
+                    6.2 ローカル信頼値
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../Reputation/6.3.html">
+            
+                <a href="../Reputation/6.3.html">
+            
+                    
+                    6.3 ローカル信頼値の合算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../Reputation/6.4.html">
+            
+                <a href="../Reputation/6.4.html">
+            
+                    
+                    6.4 アルゴリズムの拡張
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../Reputation/6.5.html">
+            
+                <a href="../Reputation/6.5.html">
+            
+                    
+                    6.5 評判管理による恩恵
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../PoI/7_PoI.html">
+            
+                <a href="../PoI/7_PoI.html">
+            
+                    
+                    7. Proof of Importance（重要度の証明）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../PoI/7.1.html">
+            
+                <a href="../PoI/7.1.html">
+            
+                    
+                    7.1 重要度計算への参加資格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../PoI/7.2.html">
+            
+                <a href="../PoI/7.2.html">
+            
+                    
+                    7.2 アウトリンク行列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../PoI/7.3.html">
+            
+                <a href="../PoI/7.3.html">
+            
+                    
+                    7.3 NCDawareRank
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../PoI/7.4.html">
+            
+                <a href="../PoI/7.4.html">
+            
+                    
+                    7.4 トランザクショングラフのクラスタリング
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../PoI/7.5.html">
+            
+                <a href="../PoI/7.5.html">
+            
+                    
+                    7.5 重要度スコアの計算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../PoI/7.6.html">
+            
+                <a href="../PoI/7.6.html">
+            
+                    
+                    7.6 攻撃への耐性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../PoI/7.7.html">
+            
+                <a href="../PoI/7.7.html">
+            
+                    
+                    7.7 Nothing-at-Stake問題
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../PoI/7.8.html">
+            
+                <a href="../PoI/7.8.html">
+            
+                    
+                    7.8 Proof of Stakeとの比較
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../Timesync/8_Timesync.html">
+            
+                <a href="../Timesync/8_Timesync.html">
+            
+                    
+                    8. 時間の同期
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../Timesync/8.1.html">
+            
+                <a href="../Timesync/8.1.html">
+            
+                    
+                    8.1 サンプルの収集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../Timesync/8.2.html">
+            
+                <a href="../Timesync/8.2.html">
+            
+                    
+                    8.2 不適データのフィルタリング
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../Timesync/8.3.html">
+            
+                <a href="../Timesync/8.3.html">
+            
+                    
+                    8.3 有効なオフセットの計算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../Timesync/8.4.html">
+            
+                <a href="../Timesync/8.4.html">
+            
+                    
+                    8.4 カップリングと閾値
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../Network/9_Network.html">
+            
+                <a href="../Network/9_Network.html">
+            
+                    
+                    9. ネットワーク
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../Network/9.1.html">
+            
+                <a href="../Network/9.1.html">
+            
+                    
+                    9.1 ノードプロトコル
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../Network/9.2.html">
+            
+                <a href="../Network/9.2.html">
+            
+                    
+                    9.2 ノードの起動
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../Network/9.3.html">
+            
+                <a href="../Network/9.3.html">
+            
+                    
+                    9.3 ノードの発見
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../Network/9.4.html">
+            
+                <a href="../Network/9.4.html">
+            
+                    
+                    9.4 ノードの選抜
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../References.html">
+            
+                <a href="../References.html">
+            
+                    
+                    10. 引用論文
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >3. 暗号法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6697;&#x53F7;&#x6CD5;">&#x6697;&#x53F7;&#x6CD5;</h1>
+<blockquote>
+<p>I understood the importance in principle of public key cryptography but it&#x2019;s
+all moved much faster than I expected. I did not expect it to be a mainstay
+of advanced communications technology</p>
+<p>&#x516C;&#x958B;&#x9375;&#x6697;&#x53F7;&#x65B9;&#x5F0F;&#x306E;&#x91CD;&#x8981;&#x6027;&#x306B;&#x3064;&#x3044;&#x3066;&#x306F;&#x304A;&#x304A;&#x3080;&#x306D;&#x7406;&#x89E3;&#x3057;&#x3066;&#x306F;&#x3044;&#x307E;&#x3057;&#x305F;&#x304C;&#x3001;&#x3053;&#x3053;&#x307E;&#x3067;&#x65E9;&#x304F;&#x666E;&#x53CA;&#x3057;&#x305F;&#x3053;&#x3068;&#x306F;&#x79C1;&#x306E;&#x60F3;&#x5B9A;&#x5916;&#x3067;&#x3057;&#x305F;&#x3002;
+&#x767A;&#x9054;&#x3057;&#x305F;&#x30B3;&#x30DF;&#x30E5;&#x30CB;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30C6;&#x30AF;&#x30CE;&#x30ED;&#x30B8;&#x30FC;&#x306E;&#x6839;&#x5E79;&#x306B;&#x306A;&#x308B;&#x3053;&#x3068;&#x3092;&#x60F3;&#x5B9A;&#x3057;&#x305F;&#x3082;&#x306E;&#x3067;&#x306F;&#x306A;&#x304B;&#x3063;&#x305F;&#x306E;&#x3067;&#x3059;&#x3002;</p>
+<p>Whitfield Diffie (Diffie-Hellman&#x9375;&#x5171;&#x6709;&#x306E;&#x8003;&#x6848;&#x8005;)</p>
+</blockquote>
+<p>&#x30D6;&#x30ED;&#x30C3;&#x30AF;&#x30C1;&#x30A7;&#x30FC;&#x30F3;&#x30C6;&#x30AF;&#x30CE;&#x30ED;&#x30B8;&#x30FC;&#x306F;&#x3044;&#x304F;&#x3064;&#x304B;&#x306E;&#x6697;&#x53F7;&#x5B66;&#x7684;&#x306A;&#x30B3;&#x30F3;&#x30BB;&#x30D7;&#x30C8;&#x306E;&#x5229;&#x7528;&#x3092;&#x524D;&#x63D0;&#x3068;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;
+NEM&#x306F;&#x3001;&#x4ED6;&#x306E;&#x591A;&#x304F;&#x306E;&#x6697;&#x53F7;&#x901A;&#x8CA8;&#x3068;&#x540C;&#x69D8;&#x3001;&#x6955;&#x5186;&#x66F2;&#x7DDA;&#x6697;&#x53F7;&#x306B;&#x4F9D;&#x62E0;&#x3057;&#x305F;&#x6697;&#x53F7;&#x6CD5;&#x3092;&#x5229;&#x7528;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;
+&#x4EE5;&#x4E0B;&#x306E;&#x66F2;&#x7DDA;&#x3092;&#x63A1;&#x7528;&#x3057;&#x305F;&#x3053;&#x3068;&#x306F;&#x3001;&#x30BB;&#x30AD;&#x30E5;&#x30EA;&#x30C6;&#x30A3;&#x3068;&#x30B9;&#x30D4;&#x30FC;&#x30C9;&#x3092;&#x4FDD;&#x8A3C;&#x3059;&#x308B;&#x3046;&#x3048;&#x3067;&#x91CD;&#x8981;&#x3067;&#x3059;&#x3002;</p>
+<p>NEM&#x306F;&#x3001;&#x7D20;&#x6570;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mrow><mn>2</mn><mn>5</mn><mn>5</mn></mrow></msup><mo>&#x2212;</mo><mn>1</mn><mn>9</mn></mrow><annotation encoding="application/x-tex">2^{255}-19</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8141079999999999em;"></span><span class="strut bottom" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathrm">2</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathrm">2</span><span class="mord mathrm">5</span><span class="mord mathrm">5</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mbin">&#x2212;</span><span class="mord mathrm">1</span><span class="mord mathrm">9</span></span></span></span>&#x306E;&#x6709;&#x9650;&#x4F53;&#x4E0A;&#x3067;&#x5B9A;&#x7FA9;&#x3055;&#x308C;&#x308B;<strong>&#x6B6A;&#x66F2;&#x30A8;&#x30C9;&#x30EF;&#x30FC;&#x30BA;&#x66F2;&#x7DDA;</strong>(<em>Twisted Edwards curve</em>)</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>&#x2212;</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mn>1</mn><mo>&#x2212;</mo><mfrac><mrow><mn>1</mn><mn>2</mn><mn>1</mn><mn>6</mn><mn>6</mn><mn>5</mn></mrow><mrow><mn>1</mn><mn>2</mn><mn>1</mn><mn>6</mn><mn>6</mn><mn>6</mn></mrow></mfrac><msup><mi>x</mi><mn>2</mn></msup><msup><mi>y</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+-x^2 + y^2 = 1 - \frac{121665}{121666} x^2y^2
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.845108em;"></span><span class="strut bottom" style="height:1.190108em;vertical-align:-0.345em;"></span><span class="base textstyle uncramped"><span class="mord">&#x2212;</span><span class="mord"><span class="mord mathit">x</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mbin">+</span><span class="mord"><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mrel">=</span><span class="mord mathrm">1</span><span class="mbin">&#x2212;</span><span class="mord reset-textstyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.345em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathrm">1</span><span class="mord mathrm">2</span><span class="mord mathrm">1</span><span class="mord mathrm">6</span><span class="mord mathrm">6</span><span class="mord mathrm">6</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.394em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathrm">1</span><span class="mord mathrm">2</span><span class="mord mathrm">1</span><span class="mord mathrm">6</span><span class="mord mathrm">6</span><span class="mord mathrm">5</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mord"><span class="mord mathit">x</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mord"><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span></p>
+<p>&#x3092;&#x4F7F;&#x7528;&#x3057;&#x305F;&#x30C7;&#x30B8;&#x30BF;&#x30EB;&#x7F72;&#x540D;&#x30A2;&#x30EB;&#x30B4;&#x30EA;&#x30BA;&#x30E0;&#x3067;&#x3042;&#x308B;Ed25519&#x3092;&#x4F7F;&#x7528;&#x3059;&#x308B;&#x3053;&#x3068;&#x3092;&#x9078;&#x629E;&#x3057;&#x307E;&#x3057;&#x305F;&#x3002;
+&#x3053;&#x308C;&#x306F;D.J.Berstein et al&#x306B;&#x3088;&#x3063;&#x3066;&#x958B;&#x767A;&#x3055;&#x308C;&#x305F;&#x3001;&#x4E16;&#x754C;&#x3067;&#x3082;&#x6709;&#x6570;&#x306E;&#x5B89;&#x5168;&#x3067;&#x9AD8;&#x901F;&#x306A;&#x7F72;&#x540D;&#x30A2;&#x30EB;&#x30B4;&#x30EA;&#x30BA;&#x30E0;<a href="../References.html#2">2</a>&#x3067;&#x3059;&#x3002;</p>
+<p>&#x66F2;&#x7DDA;&#x4E0A;&#x306E;&#x5DE1;&#x56DE;&#x7FA4;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">G</span></span></span></span>&#x306B;&#x5BFE;&#x5FDC;&#x3059;&#x308B;&#x30D9;&#x30FC;&#x30B9;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x3092;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05017em;">B</span></span></span></span>&#x3068;&#x3057;&#x307E;&#x3059;&#x3002;&#x3053;&#x306E;&#x7FA4;&#x306F; <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>q</mi><mo>=</mo><msup><mn>2</mn><mrow><mn>2</mn><mn>5</mn><mn>2</mn></mrow></msup><mo>&#x2212;</mo><mn>2</mn><mn>7</mn><mn>7</mn><mn>4</mn><mn>2</mn><mn>3</mn><mn>1</mn><mn>7</mn><mn>7</mn><mn>7</mn><mn>7</mn><mn>3</mn><mn>7</mn><mn>2</mn><mn>3</mn><mn>5</mn><mn>3</mn><mn>5</mn><mn>3</mn><mn>5</mn><mn>8</mn><mn>5</mn><mn>1</mn><mn>9</mn><mn>3</mn><mn>7</mn><mn>7</mn><mn>9</mn><mn>0</mn><mn>8</mn><mn>8</mn><mn>3</mn><mn>6</mn><mn>4</mn><mn>8</mn><mn>4</mn><mn>9</mn><mn>3</mn></mrow><annotation encoding="application/x-tex">q=2^{252}-27742317777372353535851937790883648493</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8141079999999999em;"></span><span class="strut bottom" style="height:1.008548em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.03588em;">q</span><span class="mrel">=</span><span class="mord"><span class="mord mathrm">2</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathrm">2</span><span class="mord mathrm">5</span><span class="mord mathrm">2</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span><span class="mbin">&#x2212;</span><span class="mord mathrm">2</span><span class="mord mathrm">7</span><span class="mord mathrm">7</span><span class="mord mathrm">4</span><span class="mord mathrm">2</span><span class="mord mathrm">3</span><span class="mord mathrm">1</span><span class="mord mathrm">7</span><span class="mord mathrm">7</span><span class="mord mathrm">7</span><span class="mord mathrm">7</span><span class="mord mathrm">3</span><span class="mord mathrm">7</span><span class="mord mathrm">2</span><span class="mord mathrm">3</span><span class="mord mathrm">5</span><span class="mord mathrm">3</span><span class="mord mathrm">5</span><span class="mord mathrm">3</span><span class="mord mathrm">5</span><span class="mord mathrm">8</span><span class="mord mathrm">5</span><span class="mord mathrm">1</span><span class="mord mathrm">9</span><span class="mord mathrm">3</span><span class="mord mathrm">7</span><span class="mord mathrm">7</span><span class="mord mathrm">9</span><span class="mord mathrm">0</span><span class="mord mathrm">8</span><span class="mord mathrm">8</span><span class="mord mathrm">3</span><span class="mord mathrm">6</span><span class="mord mathrm">4</span><span class="mord mathrm">8</span><span class="mord mathrm">4</span><span class="mord mathrm">9</span><span class="mord mathrm">3</span></span></span></span>&#x500B;&#x306E;&#x5143;&#x3092;&#x6301;&#x3061;&#x307E;&#x3059;&#x3002;
+&#x7FA4;&#x4E0A;&#x306E;&#x4EFB;&#x610F;&#x306E;&#x5143;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">A</span></span></span></span>&#x306F;256&#x30D3;&#x30C3;&#x30C8;&#x306E;&#x6574;&#x6570;&#x306B;&#x30A8;&#x30F3;&#x30B3;&#x30FC;&#x30C9;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;
+&#x3053;&#x308C;&#x306F;256&#x30D3;&#x30C3;&#x30C8;&#x306E;&#x6587;&#x5B57;&#x5217;&#x3068;&#x3057;&#x3066;&#x89E3;&#x91C8;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x3001;&#x30C7;&#x30B3;&#x30FC;&#x30C9;&#x3057;&#x3066;&#x518D;&#x3073;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">A</span></span></span></span>&#x306B;&#x623B;&#x3059;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;&#x8A73;&#x7D30;&#x306F;<a href="../References.html#2">2</a>&#x3092;&#x898B;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;&#x3002;</p>
+<p>NEM&#x3067;&#x306F;&#x3001;&#x4E0A;&#x8A18;&#x306E;&#x8AD6;&#x6587;&#x4E2D;&#x3067;&#x8A00;&#x53CA;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x30CF;&#x30C3;&#x30B7;&#x30E5;&#x95A2;&#x6570;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>H</mi></mrow><annotation encoding="application/x-tex">H</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.08125em;">H</span></span></span></span>&#x3068;&#x3057;&#x3066;512&#x30D3;&#x30C3;&#x30C8;SHA3&#x30CF;&#x30C3;&#x30B7;&#x30E5;&#x95A2;&#x6570;&#x3092;&#x7528;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Accounts/2.4.html" class="navigation navigation-prev " aria-label="Previous page: 2.4 アドレスの意図的な重複の可能性">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="3.1.html" class="navigation navigation-next " aria-label="Next page: 3.1 公開鍵と秘密鍵">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3. 暗号法","level":"1.4","depth":1,"next":{"title":"3.1 公開鍵と秘密鍵","level":"1.4.1","depth":2,"path":"Cryptography/3.1.md","ref":"Cryptography/3.1.md","articles":[]},"previous":{"title":"2.4 アドレスの意図的な重複の可能性","level":"1.3.4","depth":2,"path":"Accounts/2.4.md","ref":"Accounts/2.4.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["katex"],"pluginsConfig":{"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOK_README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Cryptography/3_Cryptography.md","mtime":"2017-01-11T14:13:51.000Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2017-01-24T12:30:43.272Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

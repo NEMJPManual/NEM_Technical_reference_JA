@@ -1,0 +1,27 @@
+general:
+  branches:
+    ignore:
+      - gh-pages
+
+machine:
+  timezone:
+    Asia/Tokyo
+
+dependencies:
+  post:
+    - sudo apt-get install node npm
+    - npm install -g gitbook-cli
+    - gitbook install
+
+test:
+  override:
+    - make clean
+    - make
+  post:
+      - cp -r _book $CIRCLE_ARTIFACTS/
+
+deployment:
+ gh-pages: # label to explain what kind of deployment
+   branch: master
+   commands:
+     - ./deploy.sh

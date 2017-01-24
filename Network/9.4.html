@@ -1,0 +1,900 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>9.4 ノードの選抜 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.1.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../References.html" />
+    
+    
+    <link rel="prev" href="9.3.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Introduction/1_Introduction.html">
+            
+                <a href="../Introduction/1_Introduction.html">
+            
+                    
+                    1. イントロダクション
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Accounts/2_Accounts.html">
+            
+                <a href="../Accounts/2_Accounts.html">
+            
+                    
+                    2. アカウントとアドレス
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Accounts/2.1.html">
+            
+                <a href="../Accounts/2.1.html">
+            
+                    
+                    2.1 アカウントの状態
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Accounts/2.2.html">
+            
+                <a href="../Accounts/2.2.html">
+            
+                    
+                    2.2 NEMにおけるアドレス
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Accounts/2.3.html">
+            
+                <a href="../Accounts/2.3.html">
+            
+                    
+                    2.3 公開鍵のアドレスへの変換
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../Accounts/2.4.html">
+            
+                <a href="../Accounts/2.4.html">
+            
+                    
+                    2.4 アドレスの意図的な重複の可能性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Cryptography/3_Cryptography.html">
+            
+                <a href="../Cryptography/3_Cryptography.html">
+            
+                    
+                    3. 暗号法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Cryptography/3.1.html">
+            
+                <a href="../Cryptography/3.1.html">
+            
+                    
+                    3.1 公開鍵と秘密鍵
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Cryptography/3.2.html">
+            
+                <a href="../Cryptography/3.2.html">
+            
+                    
+                    3.2 署名と検証
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Cryptography/3.3.html">
+            
+                <a href="../Cryptography/3.3.html">
+            
+                    
+                    3.3 メッセージの暗号化と復号化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Transactions/4_Transactions.html">
+            
+                <a href="../Transactions/4_Transactions.html">
+            
+                    
+                    4. トランザクション
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Transactions/4.1.html">
+            
+                <a href="../Transactions/4.1.html">
+            
+                    
+                    4.1 送金トランザクション
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../Transactions/4.2.html">
+            
+                <a href="../Transactions/4.2.html">
+            
+                    
+                    4.2 重要度委任トランザクション
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../Transactions/4.3.html">
+            
+                <a href="../Transactions/4.3.html">
+            
+                    
+                    4.3 マルチシグ関連トランザクション
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../Transactions/4.4.html">
+            
+                <a href="../Transactions/4.4.html">
+            
+                    
+                    4.4 未承認トランザクション（スパムフィルタ）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Blockchain/5_Blockchain.html">
+            
+                <a href="../Blockchain/5_Blockchain.html">
+            
+                    
+                    5. ブロックとブロックチェーン
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Blockchain/5.1.html">
+            
+                <a href="../Blockchain/5.1.html">
+            
+                    
+                    5.1 ブロック作成難度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Blockchain/5.2.html">
+            
+                <a href="../Blockchain/5.2.html">
+            
+                    
+                    5.2 ブロックスコア
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Blockchain/5.3.html">
+            
+                <a href="../Blockchain/5.3.html">
+            
+                    
+                    5.3 ブロックの作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../Blockchain/5.4.html">
+            
+                <a href="../Blockchain/5.4.html">
+            
+                    
+                    5.4 ブロックチェーンの同期
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Reputation/6_Reputation.html">
+            
+                <a href="../Reputation/6_Reputation.html">
+            
+                    
+                    6. ノードの評判管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Reputation/6.1.html">
+            
+                <a href="../Reputation/6.1.html">
+            
+                    
+                    6.1 ノード間の交信
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../Reputation/6.2.html">
+            
+                <a href="../Reputation/6.2.html">
+            
+                    
+                    6.2 ローカル信頼値
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../Reputation/6.3.html">
+            
+                <a href="../Reputation/6.3.html">
+            
+                    
+                    6.3 ローカル信頼値の合算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../Reputation/6.4.html">
+            
+                <a href="../Reputation/6.4.html">
+            
+                    
+                    6.4 アルゴリズムの拡張
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../Reputation/6.5.html">
+            
+                <a href="../Reputation/6.5.html">
+            
+                    
+                    6.5 評判管理による恩恵
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../PoI/7_PoI.html">
+            
+                <a href="../PoI/7_PoI.html">
+            
+                    
+                    7. Proof of Importance（重要度の証明）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../PoI/7.1.html">
+            
+                <a href="../PoI/7.1.html">
+            
+                    
+                    7.1 重要度計算への参加資格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../PoI/7.2.html">
+            
+                <a href="../PoI/7.2.html">
+            
+                    
+                    7.2 アウトリンク行列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../PoI/7.3.html">
+            
+                <a href="../PoI/7.3.html">
+            
+                    
+                    7.3 NCDawareRank
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../PoI/7.4.html">
+            
+                <a href="../PoI/7.4.html">
+            
+                    
+                    7.4 トランザクショングラフのクラスタリング
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../PoI/7.5.html">
+            
+                <a href="../PoI/7.5.html">
+            
+                    
+                    7.5 重要度スコアの計算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../PoI/7.6.html">
+            
+                <a href="../PoI/7.6.html">
+            
+                    
+                    7.6 攻撃への耐性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../PoI/7.7.html">
+            
+                <a href="../PoI/7.7.html">
+            
+                    
+                    7.7 Nothing-at-Stake問題
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../PoI/7.8.html">
+            
+                <a href="../PoI/7.8.html">
+            
+                    
+                    7.8 Proof of Stakeとの比較
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../Timesync/8_Timesync.html">
+            
+                <a href="../Timesync/8_Timesync.html">
+            
+                    
+                    8. 時間の同期
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../Timesync/8.1.html">
+            
+                <a href="../Timesync/8.1.html">
+            
+                    
+                    8.1 サンプルの収集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../Timesync/8.2.html">
+            
+                <a href="../Timesync/8.2.html">
+            
+                    
+                    8.2 不適データのフィルタリング
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../Timesync/8.3.html">
+            
+                <a href="../Timesync/8.3.html">
+            
+                    
+                    8.3 有効なオフセットの計算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../Timesync/8.4.html">
+            
+                <a href="../Timesync/8.4.html">
+            
+                    
+                    8.4 カップリングと閾値
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="9_Network.html">
+            
+                <a href="9_Network.html">
+            
+                    
+                    9. ネットワーク
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="9.1.html">
+            
+                <a href="9.1.html">
+            
+                    
+                    9.1 ノードプロトコル
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="9.2.html">
+            
+                <a href="9.2.html">
+            
+                    
+                    9.2 ノードの起動
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="9.3.html">
+            
+                <a href="9.3.html">
+            
+                    
+                    9.3 ノードの発見
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10.4" data-path="9.4.html">
+            
+                <a href="9.4.html">
+            
+                    
+                    9.4 ノードの選抜
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../References.html">
+            
+                <a href="../References.html">
+            
+                    
+                    10. 引用論文
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >9.4 ノードの選抜</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x30CE;&#x30FC;&#x30C9;&#x306E;&#x9078;&#x629C;">&#x30CE;&#x30FC;&#x30C9;&#x306E;&#x9078;&#x629C;</h2>
+<p>&#x30CE;&#x30FC;&#x30C9;&#x767A;&#x898B;&#x30D7;&#x30ED;&#x30BB;&#x30B9;&#x306E;&#x7D50;&#x679C;&#x3068;&#x3057;&#x3066;&#x3001;&#x6642;&#x9593;&#x306E;&#x7D4C;&#x904E;&#x3068;&#x3068;&#x3082;&#x306B;&#x3001;&#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x30CE;&#x30FC;&#x30C9;&#x306F;
+&#x30CD;&#x30C3;&#x30C8;&#x30EF;&#x30FC;&#x30AF;&#x5185;&#x306E;&#x3088;&#x308A;&#x591A;&#x304F;&#x306E;&#x30CE;&#x30FC;&#x30C9;&#x306B;&#x6C17;&#x3065;&#x304D;&#x307E;&#x3059;&#x3002;&#x6700;&#x7D42;&#x7684;&#x306B;&#x3001;&#x65E2;&#x77E5;&#x306E;&#x30CE;&#x30FC;&#x30C9;&#x306E;&#x6570;&#xFF08;&#x3088;&#x304F;&#x77E5;&#x3089;&#x308C;&#x305F;&#x30CE;&#x30FC;&#x30C9;&#x304A;&#x3088;&#x3073;&#x305D;&#x3046;&#x3067;&#x306A;&#x3044;&#x30CE;&#x30FC;&#x30C9;&#xFF09;&#x306F;&#x3001;&#x30D1;&#x30FC;&#x30C8;&#x30CA;&#x30FC;&#x30CE;&#x30FC;&#x30C9;&#x306E;&#x6570;&#x3088;&#x308A;&#x306F;&#x308B;&#x304B;&#x306B;&#x591A;&#x304F;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x30CE;&#x30FC;&#x30C9;&#x306F;&#x5B9A;&#x671F;&#x7684;&#x306B;&#x305D;&#x306E;&#x30D1;&#x30FC;&#x30C8;&#x30CA;&#x30FC;&#x30CE;&#x30FC;&#x30C9;&#x3092;&#x518D;&#x8A08;&#x7B97;&#x3057;&#x307E;&#x3059;&#x3002;&#x3053;&#x306E;&#x518D;&#x8A08;&#x7B97;&#x304C;&#x884C;&#x308F;&#x308C;&#x308B;&#x3068;
+&#x3059;&#x3079;&#x3066;&#x306E;&#x65E2;&#x77E5;&#x306E;&#x30CE;&#x30FC;&#x30C9;&#x306F;&#x30D3;&#x30B8;&#x30FC;&#x3068;&#x3057;&#x3066;&#x691C;&#x51FA;&#x3055;&#x308C;&#x305F;&#x3082;&#x306E;&#x3082;&#x542B;&#x3081;&#x3001;&#x30D1;&#x30FC;&#x30C8;&#x30CA;&#x30FC;&#x30CE;&#x30FC;&#x30C9;&#x306B;&#x306A;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;
+&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x8A2D;&#x5B9A;&#x3067;&#x306F;&#x3001;&#x3053;&#x306E;&#x518D;&#x8A08;&#x7B97;&#x304C;&#x4FE1;&#x983C;&#x5024;&#x306E;&#x518D;&#x8A08;&#x7B97;&#x3088;&#x308A;&#x3082;&#x983B;&#x7E41;&#x306B;&#x884C;&#x308F;&#x308C;&#x307E;&#x3059;&#x3002;
+&#x30C7;&#x30D5;&#x30A9;&#x30EB;&#x30C8;&#x3067;&#x306F;&#x3001;&#x4FE1;&#x983C;&#x5024;&#x306F;15&#x5206;&#x3054;&#x3068;&#x306B;&#x518D;&#x8A08;&#x7B97;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x65E2;&#x77E5;&#x306E;&#x30CE;&#x30FC;&#x30C9;&#x306F;&#x305D;&#x306E;&#x4FE1;&#x983C;&#x5024;&#x306B;&#x3088;&#x3063;&#x3066;&#x91CD;&#x307F;&#x4ED8;&#x3051;&#x3055;&#x308C;&#x3001;&#x30D1;&#x30FC;&#x30C8;&#x30CA;&#x30FC;&#x30CE;&#x30FC;&#x30C9;&#x306F;&#x30E9;&#x30F3;&#x30C0;&#x30E0;&#x306B;
+&#x305D;&#x308C;&#x3089;&#x306E;&#x4E2D;&#x304B;&#x3089;&#x9078;&#x629E;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;&#x3088;&#x308A;&#x5927;&#x304D;&#x306A;&#x4FE1;&#x983C;&#x5024;&#x3092;&#x6301;&#x3064;&#x30CE;&#x30FC;&#x30C9;&#xFF08;&#x3088;&#x308A;&#x826F;&#x3044;&#x30CE;&#x30FC;&#x30C9;&#xFF09;
+&#x304C;&#x30D1;&#x30FC;&#x30C8;&#x30CA;&#x30FC;&#x3068;&#x3057;&#x3066;&#x9078;&#x629E;&#x3055;&#x308C;&#x308B;&#x53EF;&#x80FD;&#x6027;&#x304C;&#x9AD8;&#x304F;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;&#x307B;&#x3068;&#x3093;&#x3069;&#x901A;&#x4FE1;&#x3057;&#x306A;&#x3044;&#x30CE;&#x30FC;&#x30C9;&#x306F;&#x901A;&#x5E38;&#x3001;
+&#xFF10;&#x307E;&#x305F;&#x306F;&#x305D;&#x308C;&#x306B;&#x8FD1;&#x3044;&#x4FE1;&#x983C;&#x5024;&#x3092;&#x6301;&#x3061;&#x307E;&#x3059;&#x3002;
+&#x30CE;&#x30FC;&#x30C9;&#x306B;&#x81EA;&#x5206;&#x81EA;&#x8EAB;&#x3092;&#x8A3C;&#x660E;&#x3057;&#x3066;&#x4FE1;&#x983C;&#x3092;&#x7BC9;&#x304F;&#x6A5F;&#x4F1A;&#x3092;&#x4E0E;&#x3048;&#x308B;&#x305F;&#x3081;&#x306B;&#x3001;
+&#x52B9;&#x7387;&#x7684;&#x306B;&#x5C11;&#x3057;&#x4FE1;&#x983C;&#x3092;&#x5D69;&#x4E0A;&#x3052;&#x3057;&#x3066;&#x3001;
+&#x9078;&#x629E;&#x3055;&#x308C;&#x3066;&#x30CD;&#x30C3;&#x30C8;&#x30EF;&#x30FC;&#x30AF;&#x306B;&#x53C2;&#x52A0;&#x3059;&#x308B;&#x6A5F;&#x4F1A;&#x3092;&#x5F97;&#x3089;&#x308C;&#x308B;&#x3088;&#x3046;&#x306B;&#x3057;&#x307E;&#x3059;&#x3002;
+&#x4FE1;&#x983C;&#x5EA6;&#x306E;30&#xFF05;&#x3092;&#x3001;&#x76F8;&#x4E92;&#x4F5C;&#x7528;&#x304C;10&#x4EE5;&#x4E0B;&#x306E;&#x30CE;&#x30FC;&#x30C9;&#x9593;&#x3067;&#x5747;&#x7B49;&#x306B;&#x5206;&#x6563;&#x3055;&#x305B;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x30CD;&#x30C3;&#x30C8;&#x30EF;&#x30FC;&#x30AF;&#x304C;&#x78BA;&#x5B9F;&#x306B;&#x63A5;&#x7D9A;&#x3055;&#x308C;&#x308B;&#x3088;&#x3046;&#x306B;&#x3001;&#x30E9;&#x30F3;&#x30C0;&#x30E0;&#x306A;&#x30D7;&#x30ED;&#x30BB;&#x30B9;&#x306B;1&#x3064;&#x306E;&#x8ABF;&#x6574;&#x3092;&#x52A0;&#x3048;&#x307E;&#x3059;&#x3002;
+&#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x30CE;&#x30FC;&#x30C9;&#x304C;&#x3088;&#x304F;&#x77E5;&#x3089;&#x308C;&#x305F;&#x30CE;&#x30FC;&#x30C9;&#x3067;&#x3042;&#x308B;&#x5834;&#x5408;&#x3001;&#x3055;&#x3089;&#x306B;&#x3001;&#x3059;&#x3079;&#x3066;&#x306E;&#x30AA;&#x30F3;&#x30E9;&#x30A4;&#x30F3;&#x306E;&#x3088;&#x304F;&#x77E5;&#x3089;&#x308C;&#x305F;&#x30CE;&#x30FC;&#x30C9;
+&#x306B;&#x63A5;&#x7D9A;&#x3057;&#x307E;&#x3059;&#x3002;&#x30ED;&#x30FC;&#x30AB;&#x30EB;&#x30CE;&#x30FC;&#x30C9;&#x304C;&#x3088;&#x304F;&#x77E5;&#x3089;&#x308C;&#x3066;&#x3044;&#x308B;&#x30CE;&#x30FC;&#x30C9;&#x3067;&#x306A;&#x3044;&#x5834;&#x5408;&#x3001;
+1&#x3064;&#x306E;&#x30E9;&#x30F3;&#x30C0;&#x30E0;&#x306A;&#x3001;&#x30AA;&#x30F3;&#x30E9;&#x30A4;&#x30F3;&#x306E;&#x3001;&#x3088;&#x304F;&#x77E5;&#x3089;&#x308C;&#x3066;&#x3044;&#x308B;&#x30CE;&#x30FC;&#x30C9;&#x306B;&#x63A5;&#x7D9A;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;
+&#x3053;&#x308C;&#x306B;&#x3088;&#x308A;&#x3001;&#x3059;&#x3079;&#x3066;&#x306E;&#x30CE;&#x30FC;&#x30C9;&#x304C;&#x7A4D;&#x6975;&#x7684;&#x306B;
+&#x5C11;&#x306A;&#x304F;&#x3068;&#x3082;1&#x3064;&#x306E;&#x3088;&#x304F;&#x77E5;&#x3089;&#x308C;&#x3066;&#x3044;&#x308B;&#x30CE;&#x30FC;&#x30C9;&#x3068;&#x306E;&#x30D1;&#x30FC;&#x30C8;&#x30CA;&#x30FC;&#x30B7;&#x30C3;&#x30D7;&#x3092;&#x7D50;&#x3079;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="9.3.html" class="navigation navigation-prev " aria-label="Previous page: 9.3 ノードの発見">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../References.html" class="navigation navigation-next " aria-label="Next page: 10. 引用論文">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"9.4 ノードの選抜","level":"1.10.4","depth":2,"next":{"title":"10. 引用論文","level":"1.11","depth":1,"path":"References.md","ref":"References.md","articles":[]},"previous":{"title":"9.3 ノードの発見","level":"1.10.3","depth":2,"path":"Network/9.3.md","ref":"Network/9.3.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["katex"],"pluginsConfig":{"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"BOOK_README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Network/9.4.md","mtime":"2017-01-11T14:52:37.000Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2017-01-24T12:30:43.272Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
